@@ -1,13 +1,13 @@
 import React from 'react'
 import Image from "next/image";
-import {ArrowRight, File, LayoutDashboard, Mail, TicketX, Timer, User, Wallet} from "lucide-react";
+import {ArrowRight, File, LayoutDashboard, Mail, Search, TicketX, Timer, User, Wallet} from "lucide-react";
 
 const LeftSideBar = ({isSm} : {isSm:boolean}) => {
     const menuItems = [
         { icon: LayoutDashboard, label: "Dashboard" },
         { icon: Mail, label: "Email" },
         { icon: File, label: "Projects" },
-        { icon: LayoutDashboard, label: "Dashboard" },
+        { icon: Search, label: "Find" },
         { icon: User, label: "Teams" },
         { icon: Wallet, label: "Payment" },
         { icon: Timer, label: "Upcoming" },
@@ -26,7 +26,7 @@ const LeftSideBar = ({isSm} : {isSm:boolean}) => {
             </section>
             <section className='flex items-center justify-start px-4 py-4 gap-3 '>
                 <div className='w-12 h-12 rounded-full flex items-center justify-center'>
-                    <Image src='/profile.jpg' alt='profile' width={40} height={40} className='w-full h-full rounded-full'/>
+                    <Image src='/profile.jpg' alt='profile' width={40} height={40} quality={50} className='w-full h-full rounded-full'/>
                 </div>
                 <div className='flex-1'>
                     <h2 className=' font-semibold text-sm leading-tight'>
